@@ -1,0 +1,53 @@
+.main-section-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    /* justify-content: space-between; */
+}
+
+.main-section-navbar{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 10px 15px 15px 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid grey;
+}
+@media (min-width:769px){
+    .hamburger-icon{
+        display: none;
+    }
+}
+.section{
+    font-size: 18px;
+    text-decoration:  underline #3772FF ;
+    text-underline-offset: 8px
+}
+.wallet-container{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+    background-color: #191B20;
+    border-radius: 15px;
+}
+.wallet-container>p:nth-child(3){
+    color:#3772FF;
+    background: #A3E3FF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+@media (max-width:450px){
+    .main-section-navbar{
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid grey;
+    }
+    
+}

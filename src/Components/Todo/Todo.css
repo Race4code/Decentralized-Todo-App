@@ -1,0 +1,51 @@
+.todo-container{
+    position: relative;
+    min-height: 15vh;
+    max-height: fit-content;
+    overflow: hidden;
+    padding: 10px;
+    background: #191B20;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    border-radius: 15px;
+}
+.edit-todo-btn{
+    padding: 3px;
+    cursor: pointer;
+}
+.edit-todo-btn:hover{
+    border-radius: 50%;
+    box-shadow: inset 100px 101px 500px 100px #4777c9;
+}
+.borderForEditTodo{
+    position: absolute;
+    height: 87%;
+    top:7%;
+    left:0;
+    border-radius: 5px;
+    width: 5px;
+    background-color: blue;
+}
+
+.todo-top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-name-section{
+    display: flex;
+    gap:3px;
+    align-items: flex-start;
+}
+.todo-name-section>p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.todo-description{
+    /* background-color: #4777c9; */
+    word-wrap: break-word;
+    width: 80%;
+    font-size: 16px;
+    color:#808191;
+}

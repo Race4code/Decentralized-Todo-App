@@ -1,0 +1,31 @@
+.warning-top-bar{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.cross-close-modal{
+    cursor:pointer;
+    color:white;
+    background-color:#3772FF;
+    font-weight:700;
+    border:none;
+    padding:3px 5px;
+}
+.modal-delete-btn{
+    cursor:pointer;
+    color:white;
+    font-weight:700;
+    padding:10px 20px;
+    border:none;
+    border-radius:30px;
+    background-color:red;
+}
+.modal-close-btn{
+    cursor:pointer;
+    color:white;
+    font-weight:700;
+    padding:10px 20px;
+    border:none;
+    border-radius:30px;
+    background-color:#3772FF;
+}

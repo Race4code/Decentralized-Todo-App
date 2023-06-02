@@ -1,0 +1,144 @@
+.edit-todo-container{
+    position: absolute;
+    height: 83vh !important;
+    width: 20%;
+    max-width: 250px; 
+    min-width: 200px;
+    border-left: 3px solid grey;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+/* test */
+@media (max-width:550px) {
+    .drawer {
+        position: fixed;
+        top: 111px;
+        /* right: -300px;  */
+        width: 350px;
+        /* z-index:-1; */
+        border-left: none;
+        height: 0%;
+        overflow: hidden;
+        /* padding: 20px ; */
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        background-color: black;
+        transition: transform 1s ease-in-out;
+      }
+      .expand{
+        animation: expand;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+      }
+      @keyframes expand {
+        from{height: 0%;padding: 0px;}
+        to{height: 40%;padding: 30px;}
+      }
+      .shrinkToZero{
+        animation: shrink;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+      }
+      @keyframes shrink {
+        from{height:40%;padding: 30px;}
+        to{height:0%;padding: 0px;}
+      }
+}
+@media (min-width:550px) {
+    .drawer {
+        position: fixed;
+        top: 110px;
+        right: -300px; /* Start position off-screen */
+        width: 300px;
+        border-left: 3px solid grey;
+        height: 87.5%;
+        padding: 20px ;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        background-color: black;
+        transition: transform 1s ease-in-out;
+      }
+      
+    .drawer.open {
+        transform: translateX(-300px); /* Move the drawer into the viewport */
+      }
+}
+
+/* .drawer {
+    position: fixed;
+    top: 110px;
+    right: -300px; 
+    width: 300px;
+    border-left: 3px solid grey;
+    height: 100%;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: black;
+    transition: transform 1s ease-in-out;
+  }
+  
+.drawer.open {
+    transform: translateX(-300px); 
+  } */
+
+
+/* end test */
+
+.edit-todo-top{
+    display: flex;
+    gap:15px;
+    font-size: 18px;
+}
+.edit-todo-top>img{
+  cursor: pointer;
+}
+.drawer>input{
+    font-size: 18px;
+    font-weight: 700;
+    color: #A6A6A6 !important;
+
+}
+.drawer>input,textarea{
+    background-color: #242731;
+    color:rgb(27, 26, 26) !important;
+    border:none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #A6A6A6 !important;
+}
+.drawer>textarea{
+    height: 10vh;
+    width: 100%;
+    resize: none;
+    font-size: 14px;
+    border:none;
+    color: #808191 !important;;
+    /* color: white !important;    */
+}
+/* .edit-todo-container>input:nth-child(3){
+    height: 10vh;
+} */
+.drawer>button{
+    background-color: #3772FF;
+    padding: 5px;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete-todo-icon-btn{
+  opacity: .5;
+}
+.delete-todo-icon-btn:hover{
+  opacity: 1;
+}
