@@ -234,6 +234,11 @@
     animation-fill-mode: forwards;
     position: relative;
 }
+@keyframes contract {
+    from{width:300px}
+    to{width:100px}
+}
+
 .expanded-sidebar-container{
     position: relative;
     width: 300px;
@@ -249,6 +254,10 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+@keyframes expand {
+    from{width:100px}
+    to{width:300px}
+}
 .contract-icon{
     cursor: pointer;
 }
@@ -259,11 +268,4 @@
     .expanded-sidebar-container{
         display: none;
     }
-}
-@keyframes contract {
-    from{width:300px}
-    to{width:100px}
-}@keyframes expand {
-    from{width:100px}
-    to{width:300px}
 }
