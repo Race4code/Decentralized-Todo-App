@@ -4,6 +4,7 @@ import edit from '../../Assets/edit.svg'
 import './Todo.css'
 import { useDispatch,useSelector } from 'react-redux'
 import { loadEditBox } from '../../store/reducers/editSlice'
+import Footer from '../Footer/Footer'
 
 const Todo = ({todo,setIsEdit,todoListId,todoListIndex,todoIndex}) => {
   
@@ -29,6 +30,7 @@ const Todo = ({todo,setIsEdit,todoListId,todoListIndex,todoIndex}) => {
       <div className='todo-description'>
         {todo.desc}
       </div>
+      <Footer />
     </div>
   )
 }
